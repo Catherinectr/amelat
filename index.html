@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMELAT | Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content">
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/final_images/Mudra Fitness-blue_logos.jpeg" alt="Mudra Fitness Logo"></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="schedule.html">Schedule & Prices</a>
+            <a href="joinus.html">Join Us</a>
+        </nav>
+    </header>
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="images/final_images/page1_montage.jpg" alt="Mudra Fitness 1" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="images/final_images/page1_montage_2.jpg" alt="Mudra Fitness 2" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="images/final_images/page1_montage_3.jpg" alt="Mudra Fitness 3" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <section id="hero-msg">
+            <h1 class="home-title">A M E L A T</h1>
+        </section>
+    </div>
+
+    <main>
+        <p>
+            Welcome to Mudra Fitness – Where Bollywood meets Zumba and Yoga to redefine your fitness journey! At Mudra Fitness, we believe that fitness should be an exhilarating and joyful experience. We have crafted a unique and engaging approach to wellness that seamlessly fuses the vibrant energy of Bollywood dance with the exhilaration of Zumba, while also embracing the serenity of yoga to bring calmness, relaxation, and meditation into your daily routine.
+        </p>
+        <p class="standout">
+            Our Mission Our mission is to inspire individuals of all ages and fitness levels to embark on a holistic journey towards better health and well-being. We understand that traditional workout routines can often feel monotonous, which is why we have introduced a fresh and exciting blend of fitness practices. Whether you're a Bollywood enthusiast, a dance lover, or simply someone seeking a fun way to get fit, Mudra Fitness has something special for you.
+        </p>
+        <h3 class="hightlights">Highlights of Fall 2023</h3>
+        <section class="bolly">
+                <img class="bolly-img" src="images/final_images/page1_bollywood_zumba.jpg" alt="India">
+                <h2>India</h2>
+                <p>Bollywood Zumba Our high-energy Bollywood Zumba sessions are designed to make you groove to the rhythm of your favorite Bollywood tracks while breaking a sweat. Led by experienced and passionate instructors, our classes are not just about fitness; they're about having a blast as you dance your way to a healthier you.</p>
+        </section>
+        
+        <div id="background"></div>
+        <section class="yoga reverse">
+                <img class="yoga-img" src="images/final_images/page1_paraguay.jpg" alt="Paraguay">
+                <h2>Parguay</h2>
+                <p>Yoga and Meditation In today's fast-paced world, we understand the importance of finding moments of calm and balance. Our yoga and meditation classes offer a serene contrast to the lively Bollywood Zumba, allowing you to connect with your inner self, relax, and find a sense of tranquility. We believe that a balanced fitness routine should encompass both high-energy workouts and mindfulness practices to enhance your overall well-being.</p>
+        </section>
+
+        <section class="mudra-msg">
+            <p>At Mudra Fitness, we are committed to creating a supportive and inclusive community where you can embark on your fitness journey without judgment or intimidation. Our team of dedicated trainers is here to guide and motivate you every step of the way, ensuring you reach your fitness goals while having a fantastic time.</p>
+        </section>
+
+        <div class='button-box'>
+            <a class="book" href="joinus.html">Join Us</a>
+        </div>
+
+        <section class="standout">
+            <p>Join us at Mudra Fitness, and experience the magic of Bollywood, the vitality of Zumba, and the serenity of yoga, all under one roof. Discover a new way to stay active, healthy, and happy. Embrace the Mudra Fitness experience and transform your life one dance step, one stretch, and one breath at a time. Come, be a part of the Mudra Fitness family, and let's dance, sweat, and breathe our way to a healthier, happier you. </p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Mudra Fitness &copy; 2023 - Catherine Purushottam</p>
+        <p><a href="schedule.html">Schedule</a></p>
+        <p><a href="joinus.html">Join Us</a></p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <div class="social">
+            <a href="https://www.facebook.com/catherinesmakeovers" target="_blank">
+                <img src="images/final_images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://instagram.com/catherines_makeover?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr" target="_blank">
+                <img src="images/final_images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

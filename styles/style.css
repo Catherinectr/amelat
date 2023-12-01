@@ -1,0 +1,388 @@
+body{
+    background-color: #172C51;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+header{
+    background-color: #f8cb44;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+#logo_link   {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+.logo{
+    width: 80px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    color: #172C51;
+    text-decoration: none;
+    text-align: center;
+    padding: 35px;
+}
+nav a:hover{
+        background-color: #172C51;
+        color: white;
+}  
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero-img{
+        width: 100%;
+}   
+
+
+.home-title{
+    background-color: #f8cb44;
+    color: #172C51;
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+    text-align: center;
+}  
+
+main p {
+    color: #f8cb44;
+    padding: 35px;
+    text-align: center;
+}
+
+main h2 {
+    color: #f8cb44;
+    padding: 35px;
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+    
+}
+main section img {
+    box-sizing: border-box;
+}
+
+.hightlights {
+    color: white;
+    text-align: center;
+}
+/* .home-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+} */
+
+#background {
+    height: 70px;
+    background-color: #172C51;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+
+
+
+/* STUFF I'VE ADDED (NB) */
+
+.bolly {
+    display: grid;
+    grid-template-columns: 1fr 65%;
+    background-color: #f8cb44;
+    height: 500px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+
+.bolly-img {
+    margin: 30px 0;
+    width: 75%;    
+    box-shadow: 5px 5px 10px #172C51;
+    grid-column: 1/2;
+    grid-row: 1/4;    
+    justify-self: right;
+    align-self: center;
+}
+
+
+.bolly h2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color: #172C51;
+    margin-top: 50px;
+    margin-right: 200px;
+    text-align: left;
+    padding-bottom: 0%;
+}
+
+.bolly p {
+    grid-column: 2/3;
+    grid-row: 2/4;
+    color: #172C51;
+    text-align: left;
+    margin: 0% aut0;
+    padding-top: 0%;
+}
+
+.yoga {
+    display: grid;
+    grid-template-columns: 65% 1fr;
+    background-color: #e84e36;
+    height: 500px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.yoga img {
+    margin: 30px 0;
+    width: 75%;
+    box-shadow: 5px 5px 10px #172C51;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    justify-self: left;
+    align-self: center;
+}
+
+.yoga h2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color: white;    
+    margin-top: 50px;
+    margin-left: 200px;
+    text-align: right;
+    padding-bottom: 0%;
+}
+
+.yoga p {
+    grid-column: 2/3;
+    grid-row: 2/4;
+    color: white;    
+    text-align: right;
+    margin: 0% aut0;
+    padding-top: 0%;
+}
+
+
+.reverse img{
+    grid-column: 2/3;
+}
+
+.reverse h2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.reverse p {
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+.standout {
+    background-color: white;
+    color: #172C51;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.standout p {
+    color: #172C51;
+}
+
+
+.button-box{
+    text-align: center;
+}
+
+.book, .join{
+    background-color: #f8cb44;
+    color: #172C51;
+    text-decoration: none;
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+
+.book:hover, .join:hover {
+    background-color: #e84e36;
+    color: white;
+}  
+
+footer{
+    background-color: #f8cb44;
+    color:#172C51;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a{
+    text-decoration: none;
+    color:#172C51;
+}  
+footer p a:hover{
+    color:#e84e36;
+}  
+
+footer p {
+    font-size: 1.2em;
+}  
+
+footer .social img   {
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
+
+/* PAGE 2 - SCHEDULE /*
+
