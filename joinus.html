@@ -1,103 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mudra Fitness | Contact Us</title>
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudra Fitness | Contact Us</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    <div id="content">
+  <div id="content">
     <header>
-        <a id="logo_link" href="index.html">
-            <img class="logo" src="images/final_images/Mudra Fitness-blue_logos.jpeg" alt="Mudra Fitness Logo"></a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="schedule.html">Schedule & Prices</a>
-            <a href="joinus.html">Contact Us</a>
-        </nav>
+      <a id="logo_link" href="index.html">
+        <img class="logo" src="images/final_images/Mudra_Fitness-blue_logos.jpeg" alt="Amelat Logo"></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule & Prices</a>
+        <a href="joinus.html">Contact Us</a>
+      </nav>
     </header>
-    <body>
-        <main>
-                <h2>Contact Us</h2>
-                <div id="feedback"></div>
-                <form action="" method="post">
-                    <ul>
-                      <li>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="user_name" />
-                      </li>
-                      <li>
-                        <label for="mail">Email:</label>
-                        <input type="email" id="mail" name="user_email" />
-                      </li>
-                      <li>
-                        <label for="msg">Message:</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                      </li>
-                      <li>
-                        <fieldset>
-                          <legend>Course Selection</legend>
-                        <p>                          
-                          <input type="checkbox" id="preference_1" name="Course-1" value="Grand 3N" />
-                          <label for="taste_1">Bollywood Zumba Classes</label>
-                        </p>
-                        <p>
-                          <input type="checkbox" id="preference_2" name="Course-2" value="Yoga Classes" />
-                          <label for="taste_2">Yoga Classes</label>
-                        </p>
-                        <p>
-                          <input type="checkbox" id="preference_3" name="Course-3" value="Salmon 5N" />
-                          <label for="taste_3">Blended</label>
-                        </p>
-                      </fieldset>
-                      </li>
-                      <li class="button">
-                        <button type="submit">Send your message</button>
-                      </li>                     
-                    </ul>
-                  </form>
-                  
-                                    
-                  
-          
-        </main>
-    </body>
-    <footer>
+      <main class="join-main">
+        <h2>Contact Us</h2>
+        <div id="feedback"></div>
+        <form action="#" method="post">
+
+        <fieldset>  
+          <legend>Personal Information</legend>
+          <ul>
+            <li>
+              <label for="fname">First Name:</label>
+              <input type="text" id="fname" name="user_fname" required >
+            </li>
+            <label for="mname">Middle Name:</label>
+              <input type="text" id="mname" name="user_mname" >
+            </li>
+            <li>
+              <label for="lname">Last Name:</label>
+              <input type="text" id="lname" name="user_lname" required >
+            </li>
+            <li>
+              <label for="phone">Mobile No:</label>
+              <input type="text" id="phone" name="user_phone" required >
+            </li>
+            <li>
+              <label for="country">Country:</label>
+              <input type="text" id="country" name="user_country" required >
+            </li>
+            <li>
+              <label for="mail">Email:</label>
+              <input type="email" id="mail" name="user_email" required >
+            </li>
+            <li>
+              <label for="lastsemester">Last Semester in BYUI:</label>
+              <input type="date" id="lastsemester" name="user_lastsemester" required >
+            </li>
+            <li>
+              <label for="offtrack">Off Track Semester in BYUI:</label>
+              <input type="date" id="offtrack" name="user_offtrack" required >
+            </li>
+            <li>
+        </fieldset>
+              <fieldset>
+                <legend>Culture & Talents</legend>
+                <li>
+                  <label for="culture">Culture(s) [you are interested to represent]:</label>
+                  <textarea id="msg" id="culture" name="user_culture" required ></textarea>
+                </li>
+                <li>
+                  <label for="talent">Skills [talent you want to participate in]:</label>
+                  <textarea id="msg" id="talent" name="user_talent" required ></textarea>
+                </li>
+                <li>
+                  <label>Skills [talent you want to participate in]:
+                    <p><input type="checkbox" id="preference_1" name="Course-1" value="Grand 3N" >
+                    WhatsApp </p>
+                    <p><input type="checkbox" id="preference_2" name="Course-2" value="Yoga Classes" >
+                    Instagram </p>
+                    <p><input type="checkbox" id="preference_3" name="Course-3" value="Salmon 5N" >
+                    Facebook </p>
+                  </label>
+                
+                <p>
+                  <label>
+                    <input type="checkbox" id="preference_2" name="Course-2" value="Yoga Classes" >
+                    Yoga Classes
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" id="preference_3" name="Course-3" value="Salmon 5N" >
+                    Blended
+                  </label>
+                </p>
+                </li>
+              </fieldset>
+            </li>
+            <li class="button">
+              <button type="submit">Sign Up!</button>
+            </li>
+          </ul>
+        </form>
+
+
+
+
+      </main>
+      <footer>
         <p>Mudra Fitness &copy; 2023 - Catherine Purushottam</p>
-        <p><a href="schedule.html">Schedule & Price</a></p>
-        <p><a href="joinus.html">Contact Us</a></p>
+        <p><a href="schedule.html">Schedule</a></p>
+        <p><a href="joinus.html">Join Us</a></p>
         <p><a href="site-plan.html">Site Plan</a></p>
         <div class="social">
-            <a href="https://www.facebook.com/catherinesmakeovers" target="_blank">
-                <img src="images/final_images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://www.youtube.com/watch?v=pjtYxTUcwH4" target="_blank">
-                <img src="images/final_images/youtube.png" alt="youtube icon">
-            </a>
-            <a href="https://instagram.com/catherines_makeover?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr" target="_blank">
-                <img src="images/final_images/instagram.png" alt="instagram icon">
-            </a>
+          <a href="https://www.facebook.com/catherinesmakeovers" target="_blank">
+            <img src="images/final_images/facebook.png" alt="fb icon">
+          </a>
+          <a href="https://www.youtube.com/watch?v=pjtYxTUcwH4" target="_blank">
+            <img src="images/final_images/youtube.png" alt="youtube icon">
+          </a>
+          <a href="https://instagram.com/catherines_makeover?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr" target="_blank">
+            <img src="images/final_images/instagram.png" alt="instagram icon">
+          </a>
         </div>
-    </footer>
-    
-<script>
-    // get the feedback div element so we can do something with it.
-    const feedbackElement = document.getElementById('feedback');
-    // get the form so we can read what was entered in it.
-    const formElement = document.forms[0];
-    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-    formElement.addEventListener('submit', function(e) {
+      </footer>
+
+    <script>
+      // get the feedback div element so we can do something with it.
+      const feedbackElement = document.getElementById('feedback');
+      // get the form so we can read what was entered in it.
+      const formElement = document.forms[0];
+      // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+      formElement.addEventListener('submit', function (e) {
         // stop the form from doing the default action.
         e.preventDefault();
         // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your interest! We will contact you soon!';
         // make the feedback element visible.
         feedbackElement.style.display = "block";
         // add a class to move everything down so our message doesn't cover it.
-        document.body.classList.toggle('moveDown');
-    });
-</script>
-                    
+        // document.body.classList.toggle('moveDown');
+      });
+    </script>
+</div>
 </body>
+
 </html>
