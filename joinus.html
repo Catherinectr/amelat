@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mudra Fitness | Contact Us</title>
+  <title>Amelat | Registration Form</title>
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -12,15 +12,11 @@
   <div id="content">
     <header>
       <a id="logo_link" href="index.html">
-        <img class="logo" src="images/final_images/Mudra_Fitness-blue_logos.jpeg" alt="Amelat Logo"></a>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="schedule.html">Schedule & Prices</a>
-        <a href="joinus.html">Contact Us</a>
-      </nav>
+        <img class="logo" src="images/final_images/Amelat Logo (Black) Square.png" alt="Amelat Logo"></a>
+      
     </header>
       <main class="join-main">
-        <h2>Contact Us</h2>
+        <h2>AMELAT Registration Form</h2>
         <div id="feedback"></div>
         <form action="#" method="post">
 
@@ -40,7 +36,7 @@
             </li>
             <li>
               <label for="phone">Mobile No:</label>
-              <input type="text" id="phone" name="user_phone" required >
+              <input type="number" id="phone" name="user_phone" required >
             </li>
             <li>
               <label for="country">Country:</label>
@@ -59,9 +55,11 @@
               <input type="date" id="offtrack" name="user_offtrack" required >
             </li>
             <li>
+          </ul>
         </fieldset>
               <fieldset>
                 <legend>Culture & Talents</legend>
+              <ul>
                 <li>
                   <label for="culture">Culture(s) [you are interested to represent]:</label>
                   <textarea id="msg" id="culture" name="user_culture" required ></textarea>
@@ -71,34 +69,47 @@
                   <textarea id="msg" id="talent" name="user_talent" required ></textarea>
                 </li>
                 <li>
-                  <label>Skills [talent you want to participate in]:
-                    <p><input type="checkbox" id="preference_1" name="Course-1" value="Grand 3N" >
-                    WhatsApp </p>
-                    <p><input type="checkbox" id="preference_2" name="Course-2" value="Yoga Classes" >
-                    Instagram </p>
-                    <p><input type="checkbox" id="preference_3" name="Course-3" value="Salmon 5N" >
-                    Facebook </p>
+                  <label>Which platform do you use? [Please share your username/number]
+                    <p class="medium"><input type="checkbox" id="preference_1" name="Course-1" value="Grand 3N" >
+                    WhatsApp </p> <input class="platform" type="whatsapp" id="whatsapp" name="user_whatsapp" >
+                    <p class="medium"><input  type="checkbox" id="preference_2" name="Course-2" value="Yoga Classes" >
+                    Instagram </p> <input class="platform" type="instagram" id="instagram" name="user_instagram" >
+                    <p class="medium"><input type="checkbox" id="preference_3" name="Course-3" value="Salmon 5N" >
+                    Facebook </p> <input class="platform" type="facebook" id="facebook" name="user_facebook" >
                   </label>
-                
-                <p>
-                  <label>
-                    <input type="checkbox" id="preference_2" name="Course-2" value="Yoga Classes" >
-                    Yoga Classes
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    <input type="checkbox" id="preference_3" name="Course-3" value="Salmon 5N" >
-                    Blended
-                  </label>
-                </p>
                 </li>
+                <li>
+              </fieldset>  
+              <fieldset>
+                <legend>Amelat Code of Conduct</legend>
+
+                <div class="tacbox">
+                  
+                  <p style="color: white" id='termsText'><input type="checkbox" name="termsChkbx">I agree to these <a href="#">Amelat Code of Conduct</a>.</p>
+                </div>
+                
+                </ul>
               </fieldset>
             </li>
+            <ul>
             <li class="button">
-              <button type="submit">Sign Up!</button>
+              <input type="submit" name="submit" value="Book now!" disabled>
+              
+              
             </li>
           </ul>
+          
+          <script>
+              var input = document.getElementsByName('termsChkbx')[0];
+              var submit = document.getElementsByName('submit')[0];
+              input.onchange=function() {
+                  if(input.checked) {
+                      submit.disabled = false;
+                  } else {
+                      submit.disabled = true;
+                  }
+              }
+          </script>
         </form>
 
 
@@ -106,10 +117,8 @@
 
       </main>
       <footer>
-        <p>Mudra Fitness &copy; 2023 - Catherine Purushottam</p>
-        <p><a href="schedule.html">Schedule</a></p>
-        <p><a href="joinus.html">Join Us</a></p>
-        <p><a href="site-plan.html">Site Plan</a></p>
+        <p>Amelat Dance Company &copy; 2023 - Catherine Purushottam</p>
+        
         <div class="social">
           <a href="https://www.facebook.com/catherinesmakeovers" target="_blank">
             <img src="images/final_images/facebook.png" alt="fb icon">

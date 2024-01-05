@@ -1,5 +1,5 @@
 body{
-    background-color: #172C51;
+    background-color:black;
     font-family: Raleway, Arial, sans-serif;
     font-size: 22px;
     margin: 0;
@@ -22,6 +22,7 @@ header{
 
 #logo_link   {
     padding-top: 5px;
+    padding-bottom: 5px;
     justify-self: center;
     align-self: center;
 }
@@ -347,6 +348,8 @@ footer .social img   {
 }
 
 
+/* PAGE 3 - JOIN US */
+
 .join-main {
     padding: 0;
     text-align: left;
@@ -409,8 +412,19 @@ form {
     border: 1px solid #999;
   }
 
+  .medium {
+    margin: 0.5px;
+  }
+
+
   fieldset p input {
     text-align: left;
+    margin: 1px;
+  }
+
+  .platform {
+    margin-left: 40%;
+    text-align: center;
   }
   
   input:focus,
@@ -426,13 +440,25 @@ form {
     /* Provide space to type some text */
     height: 5em;
   }
+
+  .tacbox {
+    display:block;
+    font-size:70%;
+    margin: 1em;
+    color: white;
+    border: 3px solid black;
+    background-color: #ad9b9b;
+    max-width: 1000px;
+  }
   
   .button {
     /* Align buttons with the text fields */
-    padding-left: 5%; /* same size as the label elements */
+     /* same size as the label elements */
+    text-align: center;
+    margin-top: 40px;
   }
   
-  button {
+  .button input {
     /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
     background-color: #f8cb44;
