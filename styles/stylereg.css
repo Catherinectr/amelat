@@ -1,0 +1,219 @@
+body{
+    background-color:black;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+header{
+    background-color: #f8cb44;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+#logo_link   {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+.logo{
+    width: 80px;
+}
+
+/*  JOIN US */
+
+.join-main {
+    padding: 0;
+    text-align: left;
+}
+h2{
+    margin-top: 1em;
+    text-align: center;
+    color: white;
+}
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 800px;
+    /* Form outline */
+    padding: 3em;
+    border: 4px solid #f8cb44;
+    background-color: #e84e36;
+    border-radius: 1em;
+  }
+  
+  ul {
+    
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    width: 100%;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+ 
+  }
+
+  legend{
+    margin-top: 1em;
+    color: white;
+    
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 550px;
+    text-align: left;
+    color: white;
+    /* text-align: center; */
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+
+  .medium {
+    margin: 0.5px;
+  }
+
+
+  fieldset p input {
+    text-align: left;
+    margin: 1px;
+  }
+
+  .platform {
+    margin-left: 40%;
+    text-align: center;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+
+  .tacbox {
+    display:block;
+    font-size:70%;
+    margin: 1em;
+    color: white;
+    border: 3px solid black;
+    background-color: #ad9b9b;
+    max-width: 1000px;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+     /* same size as the label elements */
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .button input {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    background-color: #f8cb44;
+    
+    font-size: large;
+  }
+  
+  #feedback {
+    background-color: antiquewhite;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; */
+    text-align: center;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+
+/*  CODE OF CONDUCT */
+
+p {
+    color: white;
+}
+
+ul {
+    color: white;
+}
+
+.values {
+    color: #e84e36;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
+
+/* PAGE 2 - SCHEDULE /*
+
