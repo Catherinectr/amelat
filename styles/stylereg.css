@@ -123,7 +123,7 @@ form {
 
   .platform {
     margin-left: 40%;
-    text-align: center;
+    text-align: left;
   }
   
   input:focus,
@@ -160,9 +160,10 @@ form {
   .button input {
     /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
-    background-color: #f8cb44;
+    background-color: black;
+    color: #A1B84D;
     
-    font-size: large;
+    font-size: medium;
   }
   
   #feedback {
