@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Amelat | Registration Form</title>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="./scripts/join.js" defer></script>
+  <script src="./scripts/conf.js" defer></script>
   <link rel="stylesheet" href="styles/stylereg.css">
 </head>
 
@@ -16,51 +19,54 @@
       
     </header>
       <main class="join-main">
-        <h2>AMELAT Registration Form</h2>
+        <h4>AMELAT Registration Form</h4>
         <div id="feedback"></div>
-        <form action="#" method="post">
+        <form id="contact-form" method="get" action="conf.html">
 
-        <fieldset>  
+        <fieldset >  
           <legend>Personal Information</legend>
           <ul>
             <li>
-              <label for="fname">First Name:</label>
-              <input type="text" id="fname" name="user_fname" required >
-            </li>
-            <label for="mname">Middle Name:</label>
-              <input type="text" id="mname" name="user_mname" >
+              <label for="fname">First Name*:
+              <input type="text" id="fname" name="user_fname" required ></label>
             </li>
             <li>
-              <label for="lname">Last Name:</label>
-              <input type="text" id="lname" name="user_lname" required >
+            <label for="mname">Middle Name:
+              <input type="text" id="mname" name="user_mname" ></label>
             </li>
             <li>
-              <label for="phone">Mobile No:</label>
-              <input type="number" id="phone" name="user_phone" required >
+              <label for="lname">Last Name*:
+              <input type="text" id="lname" name="user_lname" required ></label>
             </li>
             <li>
-              <label for="emergencycontact">Emergency Contact:</label>
-              <input type="number" id="emergencycontact" name="user_emergencycontact" required >
+              <label for="phone">Mobile No*:
+              <input type="number" id="phone" name="user_phone" required ></label>
             </li>
             <li>
-              <label for="country">Country:</label>
-              <input type="text" id="country" name="user_country" required >
+              <label for="emergencycontact">Emergency Contact*:
+              <input type="number" id="emergencycontact" name="user_emergency_contact" required ></label>
             </li>
             <li>
-              <label for="mail">Email:</label>
-              <input type="email" id="mail" name="user_email" required >
+              <label for="country">Country*:
+              <input type="text" id="country" name="user_country" required ></label>
             </li>
             <li>
-              <label for="health">Special Health Conditions:</label>
-              <input type="text" id="health" name="user_health" required >
+              <label for="mail">Email*:
+              <input type="email" id="mail" name="user_email" required ></label>
             </li>
             <li>
-              <label for="lastsemester">Last Semester in BYUI:</label>
-              <input type="date" id="lastsemester" name="user_lastsemester" required >
+              <label for="health">Special Health Conditions*:
+              <input type="text" id="health" name="user_health" required ></label>
             </li>
             <li>
-              <label for="offtrack">Off Track Semester in BYUI:</label>
-              <input type="date" id="offtrack" name="user_offtrack" required >
+              <label for="lastsemester">Expected Graduation Year*:</label>
+              <input type="number" id="lastsemester" name="user_last_semester" placeholder="YYYY" title="You must enter a four digit year" required >
+            </li>
+            <li>
+              <p>Off Track Semester in BYUI*:</p>
+              <label class="offtrackradio"><input name="off_track" type="radio" value="winter">Winter</label>
+              <label class="offtrackradio"><input name="off_track" type="radio" value="spring">Spring</label>
+              <label class="offtrackradio"><input name="off_track" type="radio" value="fall">Fall</label>
             </li>
             <li>
           </ul>
@@ -69,21 +75,21 @@
                 <legend>Culture & Talents</legend>
               <ul>
                 <li>
-                  <label for="culture">Culture(s) [you are interested to represent]:</label>
-                  <textarea id="msg" id="culture" name="user_culture" required ></textarea>
+                  <label for="culture">Culture(s) [you are interested to represent]*
+                  <textarea id="msg" id="culture" name="user_culture" required ></textarea></label>
                 </li>
                 <li>
-                  <label for="talent">Skills [talent you want to participate in]:</label>
-                  <textarea id="msg" id="talent" name="user_talent" required ></textarea>
+                  <label for="talent">Skills [talent you want to participate in]*:
+                  <textarea id="msg" id="talent" name="user_talent" required ></textarea></label>
                 </li>
                 <li>
                   <label>Which platform do you use? [Please share your username/number]
-                    <p class="medium"><input type="checkbox" id="preference_1" name="Course-1" value="Grand 3N" >
+                    <p class="medium"><input type="checkbox" id="preference_1" name="platform_preference" value="whatsapp" >
                     WhatsApp </p> <input class="platform" type="whatsapp" id="whatsapp" name="user_whatsapp" >
-                    <p class="medium"><input  type="checkbox" id="preference_2" name="Course-2" value="Yoga Classes" >
+                    <p class="medium"><input  type="checkbox" id="preference_2" name="platform_preference" value="instagram" >
                     Instagram </p> <input class="platform" type="instagram" id="instagram" name="user_instagram" >
-                    <p class="medium"><input type="checkbox" id="preference_3" name="Course-3" value="Salmon 5N" >
-                    Facebook </p> <input class="platform" type="facebook" id="facebook" name="user_facebook" >
+                    <p class="medium"><input type="checkbox" id="preference_3" name="platform_preference" value="facebook" >
+                    Facebook </p> <input class="platform" type="facebook" id="facebook" name="user_facebook" >  
                   </label>
                 </li>
                 <li>
@@ -93,7 +99,7 @@
 
                 <div class="tacbox">
                   
-                  <p style="color: white" id='termsText'><input type="checkbox" name="termsChkbx">I agree to these <a href="https://docs.google.com/document/d/12lpN7-6Dt7oWSsyl0yZxvHIyqOgj41KZn8e1iKWR0QQ/edit?usp=sharing">Amelat Code of Conduct</a>.</p>
+                  <p style="color: white" id='termsText'><input type="checkbox" name="terms" required>I agree to these <a href="https://docs.google.com/document/d/12lpN7-6Dt7oWSsyl0yZxvHIyqOgj41KZn8e1iKWR0QQ/edit?usp=sharing">Amelat Code of Conduct</a>.*</p>
                 </div>
                 
                 </ul>
@@ -101,13 +107,13 @@
             </li>
             <ul>
             <li class="button">
-              <input type="submit" name="submit" value="Book now!" disabled>
+              <input type="submit" name="submit" value="Register now!">
               
               
             </li>
           </ul>
           
-          <script>
+          <!-- <script>
               var input = document.getElementsByName('termsChkbx')[0];
               var submit = document.getElementsByName('submit')[0];
               input.onchange=function() {
@@ -117,7 +123,7 @@
                       submit.disabled = true;
                   }
               }
-          </script>
+          </script> -->
         </form>
 
 
@@ -129,7 +135,7 @@
         
       </footer>
 
-    <script>
+    <!-- <script>
       // get the feedback div element so we can do something with it.
       const feedbackElement = document.getElementById('feedback');
       // get the form so we can read what was entered in it.
@@ -145,7 +151,7 @@
         // add a class to move everything down so our message doesn't cover it.
         // document.body.classList.toggle('moveDown');
       });
-    </script>
+    </script> -->
 </div>
 </body>
 
