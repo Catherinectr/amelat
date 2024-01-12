@@ -1,5 +1,5 @@
 body{
-    background-color:black;
+    background-color:#A1B84D;
     font-family: Raleway, Arial, sans-serif;
     font-size: 22px;
     margin: 0;
@@ -10,6 +10,7 @@ body{
 
 h4 {
     margin: 0;
+    text-align: center;
 }
 
 #content{
@@ -17,10 +18,10 @@ h4 {
     margin: 0 auto;
 }
 header{
-    background-color: #f8cb44;
-    display: grid;
-    grid-template-columns: 150px auto;
+    background-color: ;
+    align-items: center;
     max-width: 350px;
+    margin: 1em;
 }
 
 #logo_link   {
@@ -31,7 +32,7 @@ header{
 }
 
 .logo{
-    width: 80px;
+    width: 350px;
 }
 
 /*  JOIN US */
@@ -43,7 +44,7 @@ header{
 h4{
     margin-top: 1em;
     text-align: center;
-    color: white;
+    color: black;
 }
 form {
     /* Center the form on the page */
@@ -52,10 +53,10 @@ form {
     width: 800px;
     /* Form outline */
     padding: 3em;
-    border: 4px solid #f8cb44;
-    background-color: #e84e36;
+    border: 4px solid #B46F40;
+    background-color: #DAAF70;
     border-radius: 1em;
-    max-width: 320px;
+    max-width: 250px;
   }
   
   ul {
@@ -70,13 +71,13 @@ form {
   form li {
     margin-top: 1%;
     font-size: medium;
-    max-width: 250px;
+    max-width: 200px;
  
   }
 
   legend{
     margin-top: 1em;
-    color: white;
+    color: black;
     font-size: large;
     max-width: 320px;
     
@@ -87,9 +88,10 @@ form {
     display: inline-block;
     width: 550px;
     text-align: left;
-    color: white;
+    color: black;
     /* text-align: center; */
-    max-width: 200px;
+    max-width: 100px;
+    font-size: small;
   }
   
   input,
@@ -164,7 +166,7 @@ form {
   }
   
   #feedback {
-    background-color: antiquewhite;
+    background-color: black;
     /* position: absolute;
     top: 0;
     left: 0;
@@ -182,15 +184,19 @@ form {
 /*  CODE OF CONDUCT */
 
 p {
-    color: white;
+    color: black;
 }
 
 ul {
-    color: white;
+    color: black;
 }
 
 .values {
     color: #e84e36;
+}
+
+.coc {
+  font-size: large;
 }
 
 @media screen and (max-width: 900px) {
