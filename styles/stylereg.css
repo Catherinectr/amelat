@@ -2,7 +2,7 @@ body{
     background-color:#A1B84D;
     font-family: Raleway, Arial, sans-serif;
     font-size: 22px;
-    margin: 0;
+    margin:  auto;
     padding: 0;
     max-width: 350px;
     text-align: center;
@@ -18,7 +18,7 @@ h4 {
     margin: 0 auto;
 }
 header{
-    background-color: ;
+    /* background-color: ; */
     align-items: center;
     max-width: 350px;
     margin: 1em;
@@ -107,6 +107,16 @@ form {
     border: 1px solid #999;
   }
 
+  #feedback {
+    background-color: antiquewhite;
+    color: white;
+    margin-left: 25%;
+    text-align: center;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+
   .medium {
     margin: 0.5px;
   }
@@ -160,14 +170,14 @@ form {
   .button input {
     /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
-    background-color: black;
-    color: #A1B84D;
+    background-color: #A1B84D;
+    color: black;
     
     font-size: medium;
   }
   
   #feedback {
-    background-color: black;
+    
     /* position: absolute;
     top: 0;
     left: 0;
@@ -176,7 +186,12 @@ form {
     padding: .5em;
     /* make this element invisible until we are ready for it */
     display: none;  
-    max-width: 320px;    
+    max-width: 320px;
+    font-size: medium; 
+    border: 4px solid #B46F40;
+    background-color: #DAAF70;
+    color: #000;  
+    margin-top: 1em;
 }
 .moveDown {
     margin-top: 3em;
