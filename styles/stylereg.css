@@ -1,22 +1,25 @@
 body{
     background-color:#A1B84D;
     font-family: Raleway, Arial, sans-serif;
-    font-size: 22px;
+    font-size: px;
     margin:  auto;
-    padding-right: 15%;
-    max-width: 600px;
+    margin-right: 2em;
+    padding-right: 2em;
+    max-width: 500px;
     text-align: center;
+    
 }
 
 h4 {
     margin: 0;
     text-align: center;
-    padding-left: 15%;
+    padding-left: 205%;
 }
 
 #content{
     max-width: 320px;
-    margin: 8%;
+    margin-left: 8%;
+    margin-right: 8%;
 }
 header{
     /* background-color: ; */
