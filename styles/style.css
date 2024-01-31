@@ -466,7 +466,7 @@ form {
     font-size: large;
   }
   
-  #feedback {
+  #message {
     background-color: antiquewhite;
     /* position: absolute;
     top: 0;
@@ -475,10 +475,7 @@ form {
     text-align: center;
     padding: .5em;
     /* make this element invisible until we are ready for it */
-    display: none;      
-}
-.moveDown {
-    margin-top: 3em;
+    /* display: none;       */
 }
 
 
